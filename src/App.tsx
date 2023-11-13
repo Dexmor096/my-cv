@@ -1,11 +1,10 @@
-import './App.css'
+import './App.css';
+import React from 'react';
+import { MainPage } from './pages/MainPage'
 
-function App() {
-
+const App :React.FC = () => {
   return (
-    <>
-      <h1>hello</h1>
-    </>
+    <MainPage />
   )
 }
 
