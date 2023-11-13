@@ -5,7 +5,7 @@ import { Contacts } from './Contacts'
 
 const Header: React.FC = () => {
 	return (
-    <Stack spacing={5} direction="row">
+    <Stack spacing={3} direction="row">
       <Photo />
       <Contacts />
     </Stack>
