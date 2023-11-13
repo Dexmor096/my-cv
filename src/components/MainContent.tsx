@@ -1,16 +1,11 @@
 import React from 'react';
-import Grid from '@mui/material/Grid';
+import { Stack } from '@mui/system'
 
 const MainContent: React.FC = () => {
 	return (
-<Grid container spacing={2}>
-  <Grid item xs={8}>
-		side
-  </Grid>
-  <Grid item xs={4}>
-		main
-  </Grid>
-</Grid>
+		<Stack>
+
+		</Stack>
 	)
 }
 
