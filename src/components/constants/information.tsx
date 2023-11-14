@@ -9,7 +9,6 @@ interface Iinformation {
 	icon: React.ReactElement,
 	title: string,
 	info: info[],
-	isBold: boolean
 }
 export const information :Iinformation[] = [
 	{
@@ -24,8 +23,19 @@ export const information :Iinformation[] = [
 			{
 				subtitle: 'Город проживания',
 				description: 'г. Севастополь',
-			}
+			},
+			{
+				subtitle: 'Образование',
+				description: 'Высшее',
+			},
+			{
+				subtitle: 'Дата рождения',
+				description: '29.10.1988 г.',
+			},
+			{
+				subtitle: 'Пол',
+				description: 'Мужской',
+			},
 		],
-		isBold: false
 	}
 ]
