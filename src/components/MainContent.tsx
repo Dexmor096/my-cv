@@ -1,10 +1,11 @@
 import React from 'react';
 import { Stack } from '@mui/system'
+import { Info } from './Info'
 
 const MainContent: React.FC = () => {
 	return (
 		<Stack>
-			<h5>main content</h5>
+			<Info />
 		</Stack>
 	)
 }

@@ -22,6 +22,6 @@ export const headeritems: IHeaderItem[] = [
   {
     id: 2,
     icon: <PlaceIcon />,
-    label: 'Город проживания: г. Севастополь'
+    label: 'Место проживания: г. Севастополь'
   },
 ]

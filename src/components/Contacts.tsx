@@ -19,12 +19,12 @@ export const Contacts: React.FC = () => {
 			</Typography>
 			<Typography 
 				variant='body1' 
-				component='p' 
+				component='span' 
 				sx={{color: '#077eb6'}}>
 					Frontend Developer
 			</Typography>
 				{headeritems.map((text, index) => (
-					<Typography sx={{ display: 'flex', alignItems: 'center' }} key={index}>
+					<Typography sx={{ display: 'flex', alignItems: 'center' }} component='span' key={index}>
 						<ListItemIcon sx={{ minWidth:'40px', color: '#077eb6' }}>{text.icon}</ListItemIcon>
 						{text.label}
 					</Typography>
