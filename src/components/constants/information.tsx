@@ -1,6 +1,8 @@
 import React from 'react';
 import PersonIcon from '@mui/icons-material/Person';
-interface info {
+import BusinessCenterIcon from '@mui/icons-material/BusinessCenter';
+import SchoolIcon from '@mui/icons-material/School';
+export interface Iinfo {
 	subtitle: string,
 	description: string,
 }
@@ -8,7 +10,7 @@ interface Iinformation {
 	id: number,
 	icon: React.ReactElement,
 	title: string,
-	info: info[],
+	info: Iinfo[],
 }
 export const information :Iinformation[] = [
 	{
@@ -35,6 +37,52 @@ export const information :Iinformation[] = [
 			{
 				subtitle: 'Пол',
 				description: 'Мужской',
+			},
+		],
+	},
+	{
+		id: 1,
+		icon: <BusinessCenterIcon />,
+		title: 'Опыт Работы',		
+		info: [
+			{
+				subtitle: 'Должность',
+				description: '',
+			},
+			{
+				subtitle: 'Компания',
+				description: 'г. Севастополь',
+			},
+			{
+				subtitle: 'Период работы',
+				description: 'Высшее',
+			},
+			{
+				subtitle: 'Обязанности и достижения',
+				description: '29.10.1988 г.',
+			},
+		],
+	},
+	{
+		id: 1,
+		icon: <SchoolIcon />,
+		title: 'Образование',		
+		info: [
+			{
+				subtitle: 'Учебное заведение',
+				description: '',
+			},
+			{
+				subtitle: 'Факультет',
+				description: 'г. Севастополь',
+			},
+			{
+				subtitle: 'Специальность',
+				description: 'Высшее',
+			},
+			{
+				subtitle: 'Дата окончания',
+				description: '29.10.1988 г.',
 			},
 		],
 	}
