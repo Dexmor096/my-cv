@@ -4,8 +4,8 @@ import { ProfSkills } from './ProfSkills';
 
 export const SideBar = () => {
 	return (
-		<Stack>
-			<Photo/>
+		<Stack sx={{backgroundColor: "#077eb6"}}>
+			<Photo />
 			<ProfSkills />
 		</Stack>
 	)

@@ -1,27 +1,26 @@
-import { Divider, ListItemIcon, Stack, Typography } from '@mui/material';
+import { Stack, Typography } from '@mui/material';
 import { Iinfo } from './constants/information';
+import { Title } from './Title'
 
-interface IinfoProps {
+export interface IinfoProps {
 	title: string,
 	icon: React.ReactElement,
-	id: number,
-	info: Iinfo[],
+	side?: boolean,
+	id?: number,
+	info?: Iinfo[],
 }
 
 export const Info: React.FC<IinfoProps> = (props) => {
-	const {title, icon, id, info} = props;
-	return (<Stack key={id} sx={{p: 2}}>
-		<Typography component='span' variant='h5' sx={{display: 'flex', alignItems: 'center'}}>
-			<ListItemIcon sx={{ minWidth:'40px', color: '#000000'}}>{icon}</ListItemIcon>
-			{title}
-		</Typography>
-		<Divider sx={{mb: 2, border: 1, borderBlockColor: '#808080'}}/>
+	const {title, icon, id, info, side} = props;
+	return (
+	<Stack key={id} sx={{p: 2}}>
+		<Title title={title} icon={icon} color={side ? '#fff' : '#000000'}/>
 		{
-			info.map((el, index) => {
-						return <Stack spacing={1} direction='row' key={index}>
-							<Typography sx={{ color: '#808080' }}>{el.subtitle}:</Typography>
-							<Typography sx={{ color: '#000000' }}>{el.description}</Typography>
-						</Stack>
+			info?.map((el, index) => {
+				return <Stack spacing={1} direction='row' key={index}>
+						<Typography sx={{ color: side ? '#000000' : '#808080' }}>{el.subtitle}{el.subtitle === '-' ? ' ': ':'}</Typography>
+						<Typography sx={{ color: side ? '#fff' : '#000000' }}>{el.description}</Typography>
+					</Stack>
 			})
 		}
 		</Stack>

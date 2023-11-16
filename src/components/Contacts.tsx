@@ -5,7 +5,7 @@ import { headeritems } from './constants/headeritems';
 export const Contacts: React.FC = () => {
 	return (
 		<Stack 
-			spacing={1.5} sx={{ 
+			spacing={1} sx={{ 
 				textAlign: 'start', 
 				backgroundColor: '#e1e1e1', 
 				color: '#000', 
