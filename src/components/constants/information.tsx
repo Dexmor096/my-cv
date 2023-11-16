@@ -2,6 +2,10 @@ import React from 'react';
 import PersonIcon from '@mui/icons-material/Person';
 import BusinessCenterIcon from '@mui/icons-material/BusinessCenter';
 import SchoolIcon from '@mui/icons-material/School';
+import AutoStoriesIcon from '@mui/icons-material/AutoStories';
+import InfoIcon from '@mui/icons-material/Info';
+
+
 export interface Iinfo {
 	subtitle: string,
 	description: string,
@@ -64,9 +68,55 @@ export const information :Iinformation[] = [
 		],
 	},
 	{
-		id: 1,
+		id: 2,
 		icon: <SchoolIcon />,
 		title: 'Образование',		
+		info: [
+			{
+				subtitle: 'Учебное заведение',
+				description: '',
+			},
+			{
+				subtitle: 'Факультет',
+				description: 'г. Севастополь',
+			},
+			{
+				subtitle: 'Специальность',
+				description: 'Высшее',
+			},
+			{
+				subtitle: 'Дата окончания',
+				description: '29.10.1988 г.',
+			},
+		],
+	},
+	{
+		id: 2,
+		icon: <AutoStoriesIcon />,
+		title: 'Курсы и тренинги',		
+		info: [
+			{
+				subtitle: 'Учебное заведение',
+				description: '',
+			},
+			{
+				subtitle: 'Факультет',
+				description: 'г. Севастополь',
+			},
+			{
+				subtitle: 'Специальность',
+				description: 'Высшее',
+			},
+			{
+				subtitle: 'Дата окончания',
+				description: '29.10.1988 г.',
+			},
+		],
+	},
+	{
+		id: 2,
+		icon: <InfoIcon />,
+		title: 'Обо мне',		
 		info: [
 			{
 				subtitle: 'Учебное заведение',
