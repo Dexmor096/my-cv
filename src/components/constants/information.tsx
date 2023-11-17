@@ -7,12 +7,19 @@ import InfoIcon from '@mui/icons-material/Info';
 import ComputerIcon from '@mui/icons-material/Computer';
 import LanguageIcon from '@mui/icons-material/Language';
 
-// import { ReactComponent as JavaScriptIcon } from '';
-import JavaScriptIcon from './java-script-white.svg';
-
+import { JavaScriptIcon } from '../icons/JavaScriptIcon';
+import { Html5Icon } from '../icons/Html5Icon';
+import { CssIcon } from '../icons/CssIcon';
+import { GitIcon } from '../icons/GitIcon';
+import { MuiIcon } from '../icons/MuiIcon';
+import { NextJsIcon } from '../icons/NextJsIcon';
+import { ReactIcon } from '../icons/ReactIcon';
+import { ReduxIcon } from '../icons/ReduxIcon';
+import { TypescriptIcon } from '../icons/TypescriptIcon';
 
 export interface Iinfo {
 	subtitle: string,
+	icon?: React.ReactElement,
 	description: string,
 }
 interface Iinformation {
@@ -167,27 +174,48 @@ export const information :Iinformation[] = [
 		info: [
 			{
 				subtitle: '-',
-				description: 'Родной',
+				icon: <JavaScriptIcon />,
+				description: 'JavaScript',
 			},
 			{
 				subtitle: '-',
-				description: 'B1 - Средний',
+				icon: <Html5Icon />,
+				description: 'HTML',
 			},
 			{
 				subtitle: '-',
-				description: 'Родной',
+				icon: <CssIcon />,
+				description: 'CSS',
 			},
 			{
 				subtitle: '-',
-				description: 'Родной',
+				icon: <ReactIcon />,
+				description: 'React',
 			},
 			{
 				subtitle: '-',
-				description: 'Родной',
+				icon: <ReduxIcon />,
+				description: 'Redux Toolkit',
 			},
 			{
 				subtitle: '-',
-				description: 'Родной',
+				icon: <TypescriptIcon />,
+				description: 'Typescript',
+			},
+			{
+				subtitle: '-',
+				icon: <GitIcon />,
+				description: 'Git',
+			},
+			{
+				subtitle: '-',
+				icon: <MuiIcon />,
+				description: 'Material UI',
+			},
+			{
+				subtitle: '-',
+				icon: <NextJsIcon />,
+				description: 'Next JS',
 			},
 		],
 	}
