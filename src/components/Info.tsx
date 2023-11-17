@@ -1,4 +1,4 @@
-import { Stack, Typography } from '@mui/material';
+import { ListItemIcon, Stack, Typography } from '@mui/material';
 import { Iinfo } from './constants/information';
 import { Title } from './Title'
 
@@ -17,8 +17,11 @@ export const Info: React.FC<IinfoProps> = (props) => {
 		<Title title={title} icon={icon} color={side ? '#fff' : '#000000'}/>
 		{
 			info?.map((el, index) => {
-				return <Stack spacing={1} direction='row' key={index}>
-						<Typography sx={{ color: side ? '#000000' : '#808080' }}>{el.subtitle}{el.subtitle === '-' ? ' ': ':'}</Typography>
+				return <Stack spacing={2} direction='row' key={index}>
+					{	el.icon 
+					? <ListItemIcon sx={{ maxWidth: '25px', minWidth: '16px', pr: 1}}>{el.icon}</ListItemIcon>
+					: <Typography sx={{ color: side ? '#000000' : '#808080' }}>{el.subtitle}{el.subtitle === '-' ? ' ': ':'}</Typography>
+					}
 						<Typography sx={{ color: side ? '#fff' : '#000000' }}>{el.description}</Typography>
 					</Stack>
 			})
