@@ -38,7 +38,7 @@ export const information :Iinformation[] = [
 		info: [
 			{
 				subtitle: 'Гражданство',
-				description: 'Российская Федерация',
+				description: 'РФ',
 			},
 			{
 				subtitle: 'Город проживания',

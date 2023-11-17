@@ -19,7 +19,7 @@ export const Info: React.FC<IinfoProps> = (props) => {
 			info?.map((el, index) => {
 				return <Stack spacing={2} direction='row' key={index}>
 					{	el.icon 
-					? <ListItemIcon sx={{ maxWidth: '25px', minWidth: '16px', pr: 1}}>{el.icon}</ListItemIcon>
+					? <ListItemIcon sx={{ maxWidth: '25px', minWidth: '16px', pr: 1, cursor: 'pointer' }}>{el.icon}</ListItemIcon>
 					: <Typography sx={{ color: side ? '#000000' : '#808080' }}>{el.subtitle}{el.subtitle === '-' ? ' ': ':'}</Typography>
 					}
 						<Typography sx={{ color: side ? '#fff' : '#000000' }}>{el.description}</Typography>

@@ -24,7 +24,7 @@ export const Contacts: React.FC = () => {
 					Frontend Developer
 			</Typography>
 				{headeritems.map((text, index) => (
-					<Typography sx={{ display: 'flex', alignItems: 'center' }} component='span' key={index}>
+					<Typography sx={{ display: 'flex', alignItems: 'center', cursor: 'pointer' }} component='span' key={index}>
 						<ListItemIcon sx={{ minWidth:'40px', color: '#077eb6' }}>{text.icon}</ListItemIcon>
 						{text.label}
 					</Typography>
