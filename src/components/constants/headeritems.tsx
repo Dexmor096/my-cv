@@ -12,7 +12,7 @@ export const headeritems: IHeaderItem[] = [
 	{
     id: 0,
     icon: <LocalPhoneIcon />,
-    label: '+7(978)682-03-63'
+    label: '+7(978)-682-03-63'
   },
   {
     id: 1,

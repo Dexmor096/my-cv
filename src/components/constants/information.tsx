@@ -7,6 +7,9 @@ import InfoIcon from '@mui/icons-material/Info';
 import ComputerIcon from '@mui/icons-material/Computer';
 import LanguageIcon from '@mui/icons-material/Language';
 
+// import { ReactComponent as JavaScriptIcon } from '';
+import JavaScriptIcon from './java-script-white.svg';
+
 
 export interface Iinfo {
 	subtitle: string,
