@@ -21,6 +21,7 @@ export interface Iinfo {
 	subtitle: string,
 	icon?: React.ReactElement,
 	description: string,
+	separator?: boolean,
 }
 interface Iinformation {
 	id: number,
@@ -65,19 +66,35 @@ export const information :Iinformation[] = [
 		info: [
 			{
 				subtitle: 'Должность',
-				description: '',
+				description: 'Frontend Developer',
 			},
 			{
 				subtitle: 'Компания',
-				description: 'г. Севастополь',
+				description: 'Rolling Scope School',
 			},
 			{
 				subtitle: 'Период работы',
-				description: 'Высшее',
+				description: 'март 2023 - сентябрь 2023 (7 месяцев)',
 			},
 			{
 				subtitle: 'Обязанности и достижения',
-				description: '29.10.1988 г.',
+				description: ' - Подключил валидацию данных авторизации на клиенте и сервере.- Разработал и успешно реализовал запросы на сервер для получения продуктов в проекте, что помогло улучшить навыки работы с API. - Внедрил и настроил Redux Toolkit для организации хранилища данных в проекте, что позволило улучшить структурирование и управление состоянием приложения, и способствовало повышению его производительности и масштабируемости. - Проводил код ревью и планировал задачи на следующий спринт, это помогло улучшить навыки совместной работы в команде и понимание принципов работы полноценного приложения.',
+			},
+			{
+				subtitle: 'Должность',
+				description: 'Менеджер по работе с клиентами',
+			},
+			{
+				subtitle: 'Компания',
+				description: 'ООО «Фаэтонъ»',
+			},
+			{
+				subtitle: 'Период работы',
+				description: 'октябрь 2017  март 2023 (5 лет 6 месяцев)',
+			},
+			{
+				subtitle: 'Обязанности и достижения',
+				description: '* Организация и планирование работы над проектами в продажах помогли развить навыки управления временем, что важно для выполнения задач в срок и планирования работы в разработке.* Работа с клиентами в продажах научила меня учитывать потребности пользователей при разработке интерфейсов и функционала веб-приложений.',
 			},
 		],
 	},
@@ -88,19 +105,40 @@ export const information :Iinformation[] = [
 		info: [
 			{
 				subtitle: 'Учебное заведение',
-				description: '',
+				description: 'Rolling Scope School',
 			},
 			{
 				subtitle: 'Факультет',
-				description: 'г. Севастополь',
+				description: 'Web Developer',
 			},
 			{
 				subtitle: 'Специальность',
-				description: 'Высшее',
+				description: 'Frontend Developer',
 			},
 			{
 				subtitle: 'Дата окончания',
-				description: '29.10.1988 г.',
+				description: '2023 г.',
+			},
+			{
+				subtitle: ' ',
+				separator: true,
+				description: ' ',
+			},
+			{
+				subtitle: 'Учебное заведение',
+				description: 'Севастопольский Государственный Университет',
+			},
+			{
+				subtitle: 'Факультет',
+				description: 'Физика',
+			},
+			{
+				subtitle: 'Специальность',
+				description: 'Биофизика',
+			},
+			{
+				subtitle: 'Дата окончания',
+				description: '2010 г.',
 			},
 		],
 	},
@@ -167,7 +205,7 @@ export const information :Iinformation[] = [
 		],
 	},
 	{
-		id: 5,
+		id: 6,
 		icon: <ComputerIcon />,
 		side: true,
 		title: 'Навыки',		

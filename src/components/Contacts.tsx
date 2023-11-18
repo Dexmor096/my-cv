@@ -12,7 +12,7 @@ export const Contacts: React.FC = () => {
 				p:3 
 				}}>
 			<Typography variant='h4' component='h2'>
-				Гладкий Константин Павлович
+				Гладкий Константин
 			</Typography>
 			<Typography variant='body2' component='h5'>
 				Резюме на должность:
