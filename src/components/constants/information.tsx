@@ -2,7 +2,7 @@ import React from 'react';
 import PersonIcon from '@mui/icons-material/Person';
 import BusinessCenterIcon from '@mui/icons-material/BusinessCenter';
 import SchoolIcon from '@mui/icons-material/School';
-import AutoStoriesIcon from '@mui/icons-material/AutoStories';
+// import AutoStoriesIcon from '@mui/icons-material/AutoStories';
 import InfoIcon from '@mui/icons-material/Info';
 import ComputerIcon from '@mui/icons-material/Computer';
 import LanguageIcon from '@mui/icons-material/Language';
@@ -78,7 +78,23 @@ export const information :Iinformation[] = [
 			},
 			{
 				subtitle: 'Обязанности и достижения',
-				description: ' - Подключил валидацию данных авторизации на клиенте и сервере.- Разработал и успешно реализовал запросы на сервер для получения продуктов в проекте, что помогло улучшить навыки работы с API. - Внедрил и настроил Redux Toolkit для организации хранилища данных в проекте, что позволило улучшить структурирование и управление состоянием приложения, и способствовало повышению его производительности и масштабируемости. - Проводил код ревью и планировал задачи на следующий спринт, это помогло улучшить навыки совместной работы в команде и понимание принципов работы полноценного приложения.',
+				description: '',
+			},
+			{
+				subtitle: '-',
+				description: 'Подключил валидацию данных авторизации на клиенте и сервере.',
+			},
+			{
+				subtitle: '-',
+				description: 'Разработал и успешно реализовал запросы на сервер для получения продуктов в проекте, что помогло улучшить навыки работы с API.',
+			},
+			{
+				subtitle: '-',
+				description: 'Внедрил и настроил Redux Toolkit для организации хранилища данных в проекте, что позволило улучшить структурирование и управление состоянием приложения, и способствовало повышению его производительности и масштабируемости.',
+			},
+			{
+				subtitle: '-',
+				description: 'Проводил код ревью и планировал задачи на следующий спринт, это помогло улучшить навыки совместной работы в команде и понимание принципов работы полноценного приложения.',
 			},
 			{
 				subtitle: 'Должность',
@@ -94,7 +110,15 @@ export const information :Iinformation[] = [
 			},
 			{
 				subtitle: 'Обязанности и достижения',
-				description: '* Организация и планирование работы над проектами в продажах помогли развить навыки управления временем, что важно для выполнения задач в срок и планирования работы в разработке.* Работа с клиентами в продажах научила меня учитывать потребности пользователей при разработке интерфейсов и функционала веб-приложений.',
+				description: '',
+			},
+			{
+				subtitle: '-',
+				description: 'Организация и планирование работы над проектами в продажах помогли развить навыки управления временем, что важно для выполнения задач в срок и планирования работы в разработке.',
+			},
+			{
+				subtitle: '-',
+				description: 'Работа с клиентами в продажах научила меня учитывать потребности пользователей при разработке интерфейсов и функционала веб-приложений.',
 			},
 		],
 	},
@@ -120,8 +144,7 @@ export const information :Iinformation[] = [
 				description: '2023 г.',
 			},
 			{
-				subtitle: ' ',
-				separator: true,
+				subtitle: '-',
 				description: ' ',
 			},
 			{
@@ -142,49 +165,49 @@ export const information :Iinformation[] = [
 			},
 		],
 	},
-	{
-		id: 3,
-		icon: <AutoStoriesIcon />,
-		title: 'Курсы и тренинги',		
-		info: [
-			{
-				subtitle: 'Учебное заведение',
-				description: '',
-			},
-			{
-				subtitle: 'Факультет',
-				description: 'г. Севастополь',
-			},
-			{
-				subtitle: 'Специальность',
-				description: 'Высшее',
-			},
-			{
-				subtitle: 'Дата окончания',
-				description: '29.10.1988 г.',
-			},
-		],
-	},
+	// {
+	// 	id: 3,
+	// 	icon: <AutoStoriesIcon />,
+	// 	title: 'Курсы и тренинги',		
+	// 	info: [
+	// 		{
+	// 			subtitle: 'Учебное заведение',
+	// 			description: '',
+	// 		},
+	// 		{
+	// 			subtitle: 'Факультет',
+	// 			description: 'г. Севастополь',
+	// 		},
+	// 		{
+	// 			subtitle: 'Специальность',
+	// 			description: 'Высшее',
+	// 		},
+	// 		{
+	// 			subtitle: 'Дата окончания',
+	// 			description: '29.10.1988 г.',
+	// 		},
+	// 	],
+	// },
 	{
 		id: 4,
 		icon: <InfoIcon />,
 		title: 'Обо мне',		
 		info: [
 			{
-				subtitle: 'Учебное заведение',
-				description: '',
+				subtitle: '-',
+				description: 'что то',
 			},
 			{
-				subtitle: 'Факультет',
-				description: 'г. Севастополь',
+				subtitle: '-',
+				description: 'что то',
 			},
 			{
-				subtitle: 'Специальность',
-				description: 'Высшее',
+				subtitle: '-',
+				description: 'что то',
 			},
 			{
-				subtitle: 'Дата окончания',
-				description: '29.10.1988 г.',
+				subtitle: '-',
+				description: 'что то',
 			},
 		],
 	},
