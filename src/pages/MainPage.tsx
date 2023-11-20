@@ -7,7 +7,11 @@ import { Contacts } from '../components/Contacts';
 
 export const MainPage: React.FC = () => {
 	return (
-      <Container maxWidth="xl">
+      <Container sx={{
+				maxWidth: {
+					md: "xl"
+				}
+			}} >
 				<Grid container spacing={1} direction="row">
 					<Grid item xs={4}>
 						<SideBar />

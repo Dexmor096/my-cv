@@ -1,9 +1,13 @@
-import { Stack, Typography } from '@mui/material';
+import { createTheme, responsiveFontSizes, Stack, ThemeProvider, Typography } from '@mui/material';
 import { ListItemIcon } from '@mui/material';
 import { headeritems } from './constants/headeritems';
 
+let theme = createTheme();
+theme = responsiveFontSizes(theme);
+
 export const Contacts: React.FC = () => {
 	return (
+		<ThemeProvider theme={theme}>
 		<Stack 
 			spacing={1} sx={{ 
 				textAlign: 'start', 
@@ -11,7 +15,9 @@ export const Contacts: React.FC = () => {
 				color: '#000', 
 				p:3 
 				}}>
-			<Typography variant='h4' component='h2'>
+			<Typography variant='h4' component='h2' sx={{ 
+
+				}}>
 				Гладкий Константин
 			</Typography>
 			<Typography variant='body2' component='h5'>
@@ -30,5 +36,6 @@ export const Contacts: React.FC = () => {
 					</Typography>
 				))}
 		</Stack>
+		</ThemeProvider>
 	)
 }
