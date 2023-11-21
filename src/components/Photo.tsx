@@ -8,9 +8,7 @@ export const Photo: React.FC = () => {
 				sx={{ 
 					p: 1,
 					maxWidth: {
-						lg: 300
-					},
-					maxHeight: {
+						sm: 150,
 						lg: 300
 					},
 					display: {

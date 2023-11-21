@@ -14,10 +14,10 @@ export const MainPage: React.FC = () => {
 			}} >
 				<Grid 
 					container 
-					spacing={1} 
+					spacing={1}
 					direction={{
-						// xs: "column",
-						sm: "row",
+						xs: 'row',
+						sm: 'column'
 					}}
 					>
 					<Grid item xs={4}>
