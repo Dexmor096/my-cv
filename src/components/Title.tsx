@@ -18,7 +18,7 @@ export const Title: React.FC<TitleProps> = (props) => {
 	const {icon, title, color} = props;
 	return (
 		<ThemeProvider theme={theme}>
-			<Typography component='span' variant='h5' sx={{display: 'flex', alignItems: 'center'}}>
+			<Typography component='span' variant='h6' sx={{display: 'flex', alignItems: 'center'}}>
 				<ListItemIcon sx={{ minWidth:'40px', color: color}}>{icon}</ListItemIcon>
 			{title}
 		</Typography>

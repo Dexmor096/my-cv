@@ -6,9 +6,17 @@ export const Photo: React.FC = () => {
 		<Box sx={{display: "flex", justifyContent: "center"}}>
 			<CardMedia 
 				sx={{ 
-					maxHeight: 300,
-					maxWidth: 300,
-					p: 2 
+					p: 1,
+					maxWidth: {
+						lg: 300
+					},
+					maxHeight: {
+						lg: 300
+					},
+					display: {
+						xs: "none",
+						sm: "block"
+					}
 				}} 
 				title="my photo" 
 				component="img" 

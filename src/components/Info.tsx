@@ -1,9 +1,6 @@
-import { ListItemIcon, Stack, Typography, createTheme, responsiveFontSizes, ThemeProvider } from '@mui/material';
+import { ListItemIcon, Stack, Typography } from '@mui/material';
 import { Iinfo } from './constants/information';
 import { Title } from './Title';
-
-let theme = createTheme();
-theme = responsiveFontSizes(theme);
 
 export interface IinfoProps {
 	title: string,
@@ -16,7 +13,6 @@ export interface IinfoProps {
 export const Info: React.FC<IinfoProps> = (props) => {
 	const {title, icon, id, info, side} = props;
 	return (
-		<ThemeProvider theme={theme}>
 			<Stack key={id} sx={{p: 2}}>
 				<Title title={title} icon={icon} color={side ? '#fff' : '#000000'}/>
 				{
@@ -24,14 +20,13 @@ export const Info: React.FC<IinfoProps> = (props) => {
 						return <Stack spacing={2} direction='row' key={index}>
 							{	el.icon 
 							? <ListItemIcon sx={{ maxWidth: '25px', minWidth: '16px', pr: 1, cursor: 'pointer' }}>{el.icon}</ListItemIcon>
-							: <Typography sx={{ color: side ? '#000000' : '#808080', textAlign: 'start' }}>{el.subtitle}{el.subtitle === ('-' || ' ') ? ' ': ':'}
+							: <Typography variant="body2" sx={{ color: side ? '#000000' : '#808080', textAlign: 'start' }}>{el.subtitle}{el.subtitle === ('-' || ' ') ? ' ': ':'}
 							</Typography>
 							}
-								<Typography sx={{ color: side ? '#fff' : '#000000', textAlign: 'start' }}>{el.description}</Typography>
+								<Typography variant="body2" sx={{ color: side ? '#fff' : '#000000', textAlign: 'start' }}>{el.description}</Typography>
 							</Stack>
 					})
 				}
 			</Stack>
-		</ThemeProvider>
 	)
 }

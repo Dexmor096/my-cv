@@ -12,15 +12,28 @@ export const MainPage: React.FC = () => {
 					md: "xl"
 				}
 			}} >
-				<Grid container spacing={1} direction="row">
+				<Grid 
+					container 
+					spacing={1} 
+					direction={{
+						// xs: "column",
+						sm: "row",
+					}}
+					>
 					<Grid item xs={4}>
 						<SideBar />
 					</Grid>
-					<Grid item container spacing={1} xs={8}>
-						<Grid item xs={12}>
+					<Grid 
+						item 
+						container 
+						spacing={1} 
+						xs={8} 
+						direction="column"
+					>
+						<Grid item>
 							<Contacts />
 						</Grid>
-						<Grid item xs={12}>
+						<Grid item>
 							<MainContent />
 						</Grid>
 					</Grid>
