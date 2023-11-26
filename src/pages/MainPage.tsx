@@ -9,15 +9,18 @@ export const MainPage: React.FC = () => {
 	return (
       <Container sx={{
 				maxWidth: {
-					md: "xl"
-				}
+					xs: "xs",
+					md: "md",
+				},
+				// p: 1
 			}} >
 				<Grid 
 					container 
+					width="100%"
 					spacing={1}
 					direction={{
-						xs: 'row',
-						sm: 'column'
+						xs: 'column-reverse',
+						md: 'row'
 					}}
 					>
 					<Grid item xs={4}>

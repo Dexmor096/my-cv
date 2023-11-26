@@ -42,8 +42,8 @@ export const information :Iinformation[] = [
 				description: 'РФ',
 			},
 			{
-				subtitle: 'Город проживания',
-				description: 'г. Севастополь',
+				subtitle: 'Город',
+				description: 'Севастополь',
 			},
 			{
 				subtitle: 'Образование',
