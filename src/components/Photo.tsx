@@ -18,7 +18,7 @@ export const Photo: React.FC = () => {
 				}} 
 				title="my photo" 
 				component="img" 
-				image="./src/assets/photo.jpg" />
+				image= "./assets/photo.jpg" />
 		</Box>
 	)
 }
